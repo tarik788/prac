@@ -1,0 +1,9 @@
+C:\Development\Tarik\prac\Java\AdvJava\Project\PeopleManagementDB\PeopleManagementDB\bin\Debug\PeopleManagementDB.dacpac
+C:\Development\Tarik\prac\Java\AdvJava\Project\PeopleManagementDB\PeopleManagementDB\bin\Debug\PeopleManagementDB.dll
+C:\Development\Tarik\prac\Java\AdvJava\Project\PeopleManagementDB\PeopleManagementDB\bin\Debug\PeopleManagementDB.pdb
+C:\Development\Tarik\prac\Java\AdvJava\Project\PeopleManagementDB\PeopleManagementDB\obj\Debug\PeopleManagementDB.dll
+C:\Development\Tarik\prac\Java\AdvJava\Project\PeopleManagementDB\PeopleManagementDB\obj\Debug\PeopleManagementDB.pdb
+C:\Development\Tarik\prac\Java\AdvJava\Project\PeopleManagementDB\PeopleManagementDB\obj\Debug\Model.xml
+C:\Development\Tarik\prac\Java\AdvJava\Project\PeopleManagementDB\PeopleManagementDB\obj\Debug\refactor.xml
+C:\Development\Tarik\prac\Java\AdvJava\Project\PeopleManagementDB\PeopleManagementDB\obj\Debug\postdeploy.sql
+C:\Development\Tarik\prac\Java\AdvJava\Project\PeopleManagementDB\PeopleManagementDB\obj\Debug\predeploy.sql
