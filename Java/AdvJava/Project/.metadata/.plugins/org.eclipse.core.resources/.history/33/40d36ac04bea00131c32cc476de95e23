@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Export-Package: com.microsoft.sqlserver.jdbc,microsoft.sql
+Bundle-ClassPath: sqljdbc4.jar
+Built-By: Administrator
+Eclipse-BundleShape: dir
+Bundle-Name: Microsoft JDBC Driver 4.0 for SQL Server Library
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Microsoft Open Technologies Inc.
+Build-Jdk: 1.6.0_35
+Bundle-Version: 4.0.2206.100
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.microsoft.sqljdbc4
+Archiver-Version: Plexus Archiver
+
+Name: META-INF/maven/com.microsoftopentechnologies.wap4ej.build/com.mi
+ crosoft.sqljdbc4/pom.properties
+SHA1-Digest: B8BwUHfmRC0OtkkHHzTBTT/U0Kc=
+
+Name: sqljdbc4.jar
+SHA1-Digest: 7MS8XFZ5VM3RrNPFmFVVyNA1W7A=
+
+Name: META-INF/maven/com.microsoftopentechnologies.wap4ej.build/com.mi
+ crosoft.sqljdbc4/pom.xml
+SHA1-Digest: Cz2+ivY0mHvVGTN6wvTTwnylccU=
+
