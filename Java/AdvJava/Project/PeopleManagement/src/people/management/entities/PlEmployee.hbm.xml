@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 Jun, 2014 4:48:02 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="people.management.entities.PlEmployee" table="PL_Employee" schema="dbo" catalog="PeopleManagement">
+        <id name="empId" type="int">
+            <column name="EmpId" />
+            <generator class="assigned" />
+        </id>
+        <property name="empFirstname" type="string">
+            <column name="EmpFirstname" length="20" not-null="true" />
+        </property>
+        <property name="empLastname" type="string">
+            <column name="EmpLastname" length="20" />
+        </property>
+        <property name="empMiddlename" type="string">
+            <column name="EmpMiddlename" length="20" />
+        </property>
+        <property name="userId" type="java.lang.Integer">
+            <column name="UserId" />
+        </property>
+        <property name="orgId" type="java.lang.Integer">
+            <column name="OrgId" />
+        </property>
+        <property name="levelId" type="java.lang.Integer">
+            <column name="LevelId" />
+        </property>
+        <property name="deptId" type="java.lang.Integer">
+            <column name="DeptId" />
+        </property>
+        <property name="dob" type="date">
+            <column name="Dob" length="10" />
+        </property>
+        <property name="doj" type="date">
+            <column name="Doj" length="10" />
+        </property>
+        <property name="nationality" type="string">
+            <column name="Nationality" length="20" />
+        </property>
+        <set name="plContactses" table="PL_Contacts" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="EmpId" />
+            </key>
+            <one-to-many class="people.management.entities.PlContacts" />
+        </set>
+        <set name="plAddresses" table="PL_Address" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="EmpId" />
+            </key>
+            <one-to-many class="people.management.entities.PlAddress" />
+        </set>
+    </class>
+</hibernate-mapping>

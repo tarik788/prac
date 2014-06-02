@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_Address"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_AddressLine"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_Applicant"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_Contacts"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_Emp_Sal"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_Employee"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_Employee_Agreement"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_Employee_Attendance"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_LK_Cities"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_LK_States"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_Leave_Request"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_Roles"/>
+  <table-filter match-catalog="PeopleManagement" match-schema="dbo" match-name="PL_Users"/>
+</hibernate-reverse-engineering>

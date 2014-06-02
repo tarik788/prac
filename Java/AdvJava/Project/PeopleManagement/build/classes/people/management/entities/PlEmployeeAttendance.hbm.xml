@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 Jun, 2014 4:48:02 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="people.management.entities.PlEmployeeAttendance" table="PL_Employee_Attendance" schema="dbo" catalog="PeopleManagement">
+        <id name="empId" type="int">
+            <column name="EmpId" />
+            <generator class="assigned" />
+        </id>
+        <property name="empName" type="string">
+            <column name="EmpName" length="20" not-null="true" />
+        </property>
+        <property name="todayDate" type="date">
+            <column name="TodayDate" length="10" />
+        </property>
+        <property name="month" type="string">
+            <column name="Month" length="50" />
+        </property>
+        <property name="day" type="string">
+            <column name="Day" length="10" />
+        </property>
+        <property name="year" type="string">
+            <column name="Year" length="50" />
+        </property>
+        <property name="inTime" type="date">
+            <column name="InTime" length="10" />
+        </property>
+        <property name="outTime" type="date">
+            <column name="OutTime" length="10" />
+        </property>
+        <property name="remark" type="string">
+            <column name="Remark" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

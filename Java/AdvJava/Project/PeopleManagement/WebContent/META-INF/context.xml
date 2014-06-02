@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" debug="5" path="/">
+  <!-- works! -->
+  <Resource name="jdbc/PeopleManagement"
+            type="javax.sql.DataSource"
+            factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+            driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+            url="jdbc:sqlserver://lwn0o0exea.database.windows.net:1433;databaseName=PeopleManagement"
+            username="axkhan2@lwn0o0exea"
+            password="@ndheri788"
+            maxActive="8" 
+            maxIdle="4" 
+            maxWait="10000"
+            auth="Container"
+          />
+  <!-- Does not seem to work?! -->
+  <Realm className="org.apache.catalina.realm.DataSourceRealm"
+           dataSourceName="jdbc/PeopleManagement"
+  		localDataSource="true"
+         userTable="PL_Users" 
+         userNameCol="Username" 
+         userCredCol="Password"
+         userRoleTable="PL_Roles" 
+         roleNameCol="RoleName"/>
+</Context>

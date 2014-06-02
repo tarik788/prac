@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 Jun, 2014 4:48:02 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="people.management.entities.PlApplicant" table="PL_Applicant" schema="dbo" catalog="PeopleManagement">
+        <id name="applicantId" type="int">
+            <column name="ApplicantId" />
+            <generator class="assigned" />
+        </id>
+        <property name="applicantName" type="string">
+            <column name="ApplicantName" length="30" not-null="true" />
+        </property>
+        <property name="address1" type="string">
+            <column name="Address1" length="50" />
+        </property>
+        <property name="address2" type="string">
+            <column name="Address2" length="50" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="20" />
+        </property>
+        <property name="phone" type="java.lang.Integer">
+            <column name="Phone" />
+        </property>
+        <property name="mobile" type="java.lang.Integer">
+            <column name="Mobile" />
+        </property>
+        <property name="dob" type="date">
+            <column name="Dob" length="10" />
+        </property>
+        <property name="gender" type="string">
+            <column name="Gender" length="10" />
+        </property>
+        <property name="nationality" type="string">
+            <column name="Nationality" length="20" />
+        </property>
+        <property name="workExp" type="java.lang.Integer">
+            <column name="WorkExp" />
+        </property>
+        <property name="skill" type="string">
+            <column name="Skill" length="50" />
+        </property>
+        <property name="industry" type="string">
+            <column name="Industry" length="50" />
+        </property>
+        <property name="category" type="string">
+            <column name="Category" length="20" />
+        </property>
+        <property name="roles" type="string">
+            <column name="Roles" length="50" />
+        </property>
+        <property name="currentEmployer" type="string">
+            <column name="CurrentEmployer" length="50" />
+        </property>
+        <property name="currentSalary" type="java.lang.Integer">
+            <column name="CurrentSalary" />
+        </property>
+        <property name="highestDegree" type="string">
+            <column name="HighestDegree" length="20" />
+        </property>
+        <property name="domain" type="string">
+            <column name="Domain" length="20" />
+        </property>
+        <property name="currentLocation" type="string">
+            <column name="CurrentLocation" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

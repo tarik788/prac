@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 Jun, 2014 4:48:02 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="people.management.entities.PlLeaveRequest" table="PL_Leave_Request" schema="dbo" catalog="PeopleManagement">
+        <id name="reqId" type="int">
+            <column name="ReqId" />
+            <generator class="assigned" />
+        </id>
+        <property name="empId" type="int">
+            <column name="EmpId" not-null="true" />
+        </property>
+        <property name="empName" type="string">
+            <column name="EmpName" length="20" />
+        </property>
+        <property name="todayDate" type="date">
+            <column name="TodayDate" length="10" />
+        </property>
+        <property name="levelId" type="string">
+            <column name="LevelId" length="10" />
+        </property>
+        <property name="deptId" type="string">
+            <column name="DeptId" length="20" />
+        </property>
+        <property name="fromDate" type="date">
+            <column name="FromDate" length="10" />
+        </property>
+        <property name="toDate" type="date">
+            <column name="ToDate" length="10" />
+        </property>
+        <property name="days" type="java.lang.Integer">
+            <column name="Days" />
+        </property>
+        <property name="reason" type="string">
+            <column name="Reason" length="500" />
+        </property>
+        <property name="leaveType" type="string">
+            <column name="LeaveType" length="50" />
+        </property>
+        <property name="activity1" type="string">
+            <column name="Activity1" length="50" />
+        </property>
+        <property name="activity2" type="string">
+            <column name="Activity2" length="50" />
+        </property>
+        <property name="activity3" type="string">
+            <column name="Activity3" length="50" />
+        </property>
+        <property name="person1" type="string">
+            <column name="Person1" length="50" />
+        </property>
+        <property name="person2" type="string">
+            <column name="Person2" length="50" />
+        </property>
+        <property name="person3" type="string">
+            <column name="Person3" length="50" />
+        </property>
+        <property name="detail1" type="string">
+            <column name="Detail1" length="100" />
+        </property>
+        <property name="detail2" type="string">
+            <column name="Detail2" length="100" />
+        </property>
+        <property name="detail3" type="string">
+            <column name="Detail3" length="100" />
+        </property>
+        <property name="address" type="string">
+            <column name="Address" length="100" />
+        </property>
+        <property name="remark" type="string">
+            <column name="Remark" length="100" />
+        </property>
+        <property name="leaveStatus" type="serializable">
+            <column name="LeaveStatus" />
+        </property>
+    </class>
+</hibernate-mapping>

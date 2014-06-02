@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 Jun, 2014 4:48:02 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="people.management.entities.PlEmpSal" table="PL_Emp_Sal" schema="dbo" catalog="PeopleManagement">
+        <id name="empid" type="int">
+            <column name="Empid" />
+            <generator class="assigned" />
+        </id>
+        <property name="year" type="int">
+            <column name="Year" not-null="true" />
+        </property>
+        <property name="month" type="int">
+            <column name="Month" not-null="true" />
+        </property>
+        <property name="allowanceType" type="string">
+            <column name="AllowanceType" length="50" not-null="true" />
+        </property>
+        <property name="allowanceName" type="string">
+            <column name="AllowanceName" length="50" not-null="true" />
+        </property>
+        <property name="amt" type="int">
+            <column name="Amt" not-null="true" />
+        </property>
+        <property name="taxable" type="string">
+            <column name="Taxable" length="5" />
+        </property>
+        <property name="percentage" type="java.lang.Integer">
+            <column name="Percentage" />
+        </property>
+    </class>
+</hibernate-mapping>

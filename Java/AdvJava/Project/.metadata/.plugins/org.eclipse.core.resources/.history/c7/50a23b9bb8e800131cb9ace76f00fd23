@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="Home" template="Manager/Layout/BaseLayout.jsp">
+		<put-attribute name="title" value="Welcome to Login Page" />
+		<put-attribute name="Header" value="/header.jsp" />
+		<put-attribute name="Navigation" value="/Menu.jsp" />
+		<put-attribute name="Body" value="/Login.jsp" />
+		<put-attribute name="Footer" value="/footer.jsp" />
+	</definition>
+</tiles-definitions>

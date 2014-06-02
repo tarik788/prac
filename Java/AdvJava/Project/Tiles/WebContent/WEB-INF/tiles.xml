@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd" >
+<tiles-definitions>
+	<definition name="login" template="/BaseLayout.jsp">
+		<put-attribute name="title" value="Welcome to Login Page" />
+		<put-attribute name="header" value="/header.jsp" />
+		<put-attribute name="body" value="/Login.jsp" />
+		<put-attribute name="lhs" value="/Lefthandside.jsp" />
+		<put-attribute name="rhs" value="/Righthandside.jsp" />
+		<put-attribute name="footer" value="/footer.jsp" />
+	</definition>
+	<definition name="lev2" extends="login">
+		<put-attribute name="title" value="Welcome to About Us Page" />
+		<put-attribute name="body" value="/Subsector.jsp" />
+	</definition>
+	<definition name="lev3" extends="login">
+		<put-attribute name="title" value="Welcome to About Us Page" />
+		<put-attribute name="body" value="/tourdesc.jsp" />
+	</definition>
+	<definition name="billdesc" extends="login">
+		<put-attribute name="title" value="Welcome to About Us Page" />
+		<put-attribute name="body" value="/pay.jsp" />
+	</definition>
+	<definition name="payment" extends="login">
+		<put-attribute name="title" value="Welcome to About Us Page" />
+		<put-attribute name="body" value="/pay.jsp" />
+	</definition>
+	<definition name="search" extends="login">
+		<put-attribute name="title" value="Welcome to Search Page" />
+		<put-attribute name="body" value="/FindTour.jsp" />
+	</definition>
+	<definition name="iteration" extends="login">
+		<put-attribute name="title" value="Welcome to Search Page" />
+		<put-attribute name="body" value="/iter.jsp" />
+	</definition>
+	<definition name="booktour" extends="login">
+		<put-attribute name="title" value="Welcome to Search Page" />
+		<put-attribute name="body" value="/booktour.jsp" />
+	</definition>
+
+</tiles-definitions>

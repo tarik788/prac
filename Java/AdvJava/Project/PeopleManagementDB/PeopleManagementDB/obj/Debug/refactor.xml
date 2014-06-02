@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="a092f35b-8d91-4fba-85a9-277ae74b4d34" ChangeDateTime="05/24/2014 14:44:47" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_Employee].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_Employee]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EmpId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="770fe6fb-b363-4598-b69b-5778c9aabf87" ChangeDateTime="05/24/2014 15:01:15" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_Applicant].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_Applicant]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ApplicantId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="239ac225-6f04-450d-a232-a54fee65a4e7" ChangeDateTime="05/24/2014 15:08:58" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_Applicant_Test].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_Applicant_Test]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TestId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="72c7484a-a42d-4eaf-87c3-19ebbc98486d" ChangeDateTime="05/24/2014 15:14:15" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_Employee_Attendance].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_Employee_Attendance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EmpId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0914ab9a-f46f-4fb9-a6a0-ccd09ecbeeaf" ChangeDateTime="05/24/2014 15:19:24" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_Leave_Request].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_Leave_Request]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ReqId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="afe37228-9f1a-4362-b250-9588ac95bee1" ChangeDateTime="05/24/2014 15:23:29" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_Leave_Request].[Activity]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_Leave_Request]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Activity1" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cb2f573e-85d9-48af-a492-c8a771981883" ChangeDateTime="05/24/2014 15:27:14" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_Employee_Agreement].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_Employee_Agreement]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EmpId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c0c3dfea-559e-47be-9f6e-bbe2db9785f4" ChangeDateTime="05/24/2014 15:27:42" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_Employee_Agreement].[Ename]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_Employee_Agreement]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="EmpName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6708581d-1e37-4599-892e-974dd8571b72" ChangeDateTime="05/24/2014 15:30:07" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_Emp_Sal].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_Emp_Sal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Empid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7c767235-b92d-4e72-bb60-4915f2d48de4" ChangeDateTime="05/24/2014 17:37:38" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_Address].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_Address]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AddressId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3a68ce88-a250-4d22-ae32-044a086dd416" ChangeDateTime="05/24/2014 18:11:34" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_AddressLine].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_AddressLine]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AddressLineId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f5418845-6a2a-4df8-b0b3-31e4bd99c92e" ChangeDateTime="05/24/2014 18:32:37" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[PL_LK_States].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PL_LK_States]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StateId" />
+  </Operation>
+</Operations>

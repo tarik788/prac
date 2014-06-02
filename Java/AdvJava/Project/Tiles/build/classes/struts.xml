@@ -1,0 +1,94 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="mypack" namespace="/" extends="struts-default">
+		<result-types>
+			<result-type name="tiles"
+				class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		<action name="login" class="mypack.ListAction">
+			<result type="tiles">login</result>
+		</action>
+		<action name="get" class="mypack.SubsectorAction">
+			<result type="tiles">lev2</result>
+		</action>
+		<action name="get2" class="mypack.TourAction">
+			<result type="tiles" name="success">lev3</result>
+			<result type="tiles" name="other">lev2</result>
+		</action>
+		<action name="submit" class="mypack.FormAction">
+			<result type="tiles">billdesc</result>
+			<result type="tiles" name="input">billdesc</result>
+		</action>
+
+		<action name="pay" class="mypack.FormAction">
+			<result type="tiles">payment</result>
+		</action>
+
+		<action name="search">
+			<result type="tiles">search</result>
+		</action>
+		<action name="tour">
+			<result type="tiles">tour</result>
+		</action>
+		<action name="bid">
+			<result type="tiles">bid</result>
+		</action>
+		<action name="download">
+			<result type="tiles">download</result>
+		</action>
+		<action name="tandc">
+			<result type="tiles">tandc</result>
+		</action>
+		<action name="feedback">
+			<result type="tiles">feedback</result>
+		</action>
+		<action name="videos">
+			<result type="tiles">videos</result>
+		</action>
+		<action name="gallery">
+			<result type="tiles">gallery</result>
+		</action>
+		<action name="emailus">
+			<result type="tiles">emailus</result>
+		</action>
+		<action name="contactus">
+			<result type="tiles">contactus</result>
+		</action>
+		<action name="home">
+			<result type="tiles">home</result>
+		</action>
+		<action name="go" class="mypack.FindTourAction">
+			<result type="tiles">search</result>
+		</action>
+
+		<action name="myaction1" class="mypack.ItineraryAction">
+			<result name="success">Itinerary.jsp</result>
+		</action>
+		<action name="myaction2" class="mypack.CostAction">
+			<result name="success">Home.jsp</result>
+		</action>
+
+		<action name="myaction3" class="mypack.ItineraryAction">
+			<result name="success">Itinerary.jsp</result>
+		</action>
+		<action name="myaction4" class="mypack.FirstAction">
+			<result name="success">staynmeal.jsp</result>
+		</action>
+		<action name="myaction5" class="mypack.FirstAction">
+			<result name="success">passport.jsp</result>
+		</action>
+		<action name="myaction6" class="mypack.FirstAction">
+			<result name="success">tnc.jsp</result>
+		</action>
+		<action name="myaction7">
+			<result name="success">booktour.jsp</result>
+		</action>
+		<action name="infotour" class="mypack.TripAction">
+			<result name="success">iter.jsp</result>
+		</action>
+
+	</package>
+</struts>

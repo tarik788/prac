@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>PeopleManagement</display-name>
+	<welcome-file-list>
+		<welcome-file>Welcome.jsp</welcome-file>
+	</welcome-file-list>
+	<listener>
+		<listener-class>org.apache.struts2.tiles.StrutsTilesListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>tilesDefinitions</param-name>
+		<param-value>/WEB-INF/tiles.xml</param-value>
+	</context-param>
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>protected resource</web-resource-name>
+			<url-pattern>/Manager/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>employee</role-name>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/Welcome.jsp</form-login-page>
+			<form-error-page>/Welcome.jsp?Error="Login Failed"</form-error-page>
+		</form-login-config>
+	</login-config>
+</web-app>

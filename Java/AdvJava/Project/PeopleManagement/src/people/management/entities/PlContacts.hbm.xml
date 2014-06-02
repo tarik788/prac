@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 Jun, 2014 4:48:02 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="people.management.entities.PlContacts" table="PL_Contacts" schema="dbo" catalog="PeopleManagement">
+        <id name="contactId" type="int">
+            <column name="ContactId" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="plEmployee" class="people.management.entities.PlEmployee" fetch="select">
+            <column name="EmpId" />
+        </many-to-one>
+        <property name="mobile" type="serializable">
+            <column name="Mobile" />
+        </property>
+        <property name="email" type="serializable">
+            <column name="Email" />
+        </property>
+    </class>
+</hibernate-mapping>

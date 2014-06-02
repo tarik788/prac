@@ -1,0 +1,17 @@
+﻿** Warnings
+     The object reference [dbo].[PL_AddressLine].[AddressLineid] differs only by case from the object definition
+       [dbo].[PL_AddressLine].[AddressLineId].
+
+** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+
+** Supporting actions
