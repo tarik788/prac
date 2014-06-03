@@ -1,0 +1,33 @@
+package people.management.db;
+
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+public class PMDbTransactions<T> {
+
+	public Boolean Insert(T t) {
+		try {
+			Session session = PMHibernateSingleton.OpenSession();
+
+		} catch (Exception ex) {
+
+		}
+		return false;
+	}
+
+	public List<T> SelectAll(String pQuery) {
+	    List<T> retTable = new List<T>();
+		try {
+			
+			Session session = PMHibernateSingleton.OpenSession();
+			Transaction tran = session.beginTransaction();
+			Query query = session.createQuery(pQuery);
+			
+
+		} catch (Exception ee) {
+
+		}
+	}
+}

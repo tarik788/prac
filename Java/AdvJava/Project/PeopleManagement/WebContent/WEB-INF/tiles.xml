@@ -10,4 +10,19 @@
 		<put-attribute name="Body" value="/Manager/Home.jsp" />
 		<put-attribute name="Footer" value="/Manager/Partial/Footer.jsp" />
 	</definition>
+	<definition name="ChangePassword" extends="Home">
+		<put-attribute name="Body" value="/Manager/ChangePassword.jsp" />
+	</definition>
+	<definition name="Password" extends="Home">
+		<put-attribute name="Body" value="/Manager/ChangePassword.jsp" />
+	</definition>
+	<definition name="Employee" extends="Home">
+		<put-attribute name="Body" value="/Manager/Employee/EmployeeList.jsp" />
+	</definition>
+	<definition name="Leave" extends="Home">
+		<put-attribute name="Body" value="/Manager/Leave/LeaveList.jsp" />
+	</definition>
+	<definition name="Employee" extends="Home">
+		<put-attribute name="Body" value="/Manager/Payroll/Payroll.jsp" />
+	</definition>
 </tiles-definitions>

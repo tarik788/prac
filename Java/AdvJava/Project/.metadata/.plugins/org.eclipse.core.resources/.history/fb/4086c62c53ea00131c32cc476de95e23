@@ -1,0 +1,5 @@
+package people.management.entitytransformer.copy;
+
+public class Transformer {
+
+}

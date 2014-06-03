@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<div id="content">
+
+	<form action="ChangePassword.action" method="post">
+		<table>
+			<tr>
+				<td>Old Password:</td>
+				<td></td>
+			</tr>
+		</table>
+		<label></label> <input type='password' id="oldPassword"
+			name="oldPassword" value="" /> <label>New Password:</label> <input
+			type='password' id="newPassword" name="newPassword" value="" /> <label>New
+			Password:</label> <input type='password' id="retypedPassword"
+			name="retypedPassword" value="" /> <br /> <input type='submit'
+			id='btnSubmit' value='Save' /> <label><s:property
+				value="errorMessage" /></label>
+	</form>
+</div>

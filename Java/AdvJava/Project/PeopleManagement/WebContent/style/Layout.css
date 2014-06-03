@@ -54,10 +54,15 @@ body {
 	background: #383;
 }
 
+#userinfo {
+	float: right;
+}
+
 #userinfo ul {
 	margin: 0;
 	padding: 0;
 }
+
 #userinfo ul li {
 	list-style-type: none;
 	display: inline;
@@ -65,7 +70,6 @@ body {
 
 #userinfo li a {
 	display: block;
-	float: left;
 	padding: 5px 10px;
 	color: #fff;
 	text-decoration: none;
@@ -131,4 +135,10 @@ body {
 	text-align: left;
 	padding: 20px;
 	height: 1%;
+}
+.center{
+	text-align:center;
+}
+.message {
+	color: red;
 }

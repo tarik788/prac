@@ -1,15 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
-		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory name="PMFactory">
-    	<property name="show_sql">true</property>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
         <property name="hibernate.connection.password">@ndheri788</property>
         <property name="hibernate.connection.url">jdbc:sqlserver://lwn0o0exea.database.windows.net:1433;databaseName=PeopleManagement</property>
         <property name="hibernate.connection.username">axkhan2@lwn0o0exea</property>
         <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
-   		<property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <property name="hibernate.show_sql">true</property>
+        <mapping class="people.management.entities.PlEmployee" />
+        <mapping class="people.management.entities.PlUsers" />
+        <mapping class="people.management.entities.PlRoles" />
+        <mapping class="people.management.entities.PlLeaveRequest" />
+        <mapping class="people.management.entities.PlLkCities" />
+        <mapping class="people.management.entities.PlEmployeeAttendance" />
+        <mapping class="people.management.entities.PlApplicant" />
+        <mapping class="people.management.entities.PlAddressLine" />
+        <mapping class="people.management.entities.PlAddress" />
+        <mapping class="people.management.entities.PlEmpSal" />
+        <mapping class="people.management.entities.PlEmployeeAgreement" />
+        <mapping class="people.management.entities.PlContacts" />
+        <mapping class="people.management.entities.PlLkStates" />
     </session-factory>
 </hibernate-configuration>

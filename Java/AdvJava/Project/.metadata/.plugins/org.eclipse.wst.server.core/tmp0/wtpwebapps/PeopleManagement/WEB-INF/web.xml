@@ -5,7 +5,7 @@
 	id="WebApp_ID" version="3.0">
 	<display-name>PeopleManagement</display-name>
 	<welcome-file-list>
-		<welcome-file>Welcome.jsp</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 	    <listener>
 		<listener-class>org.apache.struts2.tiles.StrutsTilesListener</listener-class>
@@ -36,7 +36,7 @@
 		<auth-method>FORM</auth-method>
 		<form-login-config>
 			<form-login-page>/Welcome.jsp</form-login-page>
-			<form-error-page>/Welcome.jsp?Error="Login Failed"</form-error-page>
+			<form-error-page>/Welcome.jsp?Error="login failed"</form-error-page>
 		</form-login-config>
 	</login-config>
 	<session-config>

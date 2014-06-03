@@ -3,7 +3,7 @@
 <div id="head-container">
 	<div id="header">
 		<h1>
-			Site name 
+			People Management
 		</h1>
 	</div>
 </div>

@@ -1,0 +1,48 @@
+package people.management.actions;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.interceptor.ServletRequestAware;
+
+import people.management.db.PMDbTransactions;
+import people.management.entities.PlUsers;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ChangePassword extends ActionSupport {
+
+	public String oldPassword;
+	public String newPassword;
+	public String retypedPassword;
+	
+	PMDbTransactions<PlUsers> dbTrans;
+
+	public ChangePassword() {
+		dbTrans = new PMDbTransactions<PlUsers>();
+	}
+
+	public String execute() {
+		HttpServletRequest request = new ServletContextAction()
+				.getServletRequest();
+		PlUsers currentuser = dbTrans
+				.SelectSingle("from PL_Users where Username = '"
+						+ request.getRemoteUser() + "'");
+		if(currentuser.getPassword().equals(oldPassword)){
+			
+		}
+		else{
+		return "error";
+		}
+		
+		return "sucess";
+	}
+
+	public PlUsers getPluser() {
+		return pluser;
+	}
+
+	public void setPluser(PlUsers pluser) {
+		this.pluser = pluser;
+	}
+
+}

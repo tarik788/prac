@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_Address" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_AddressLine" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_Applicant" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_Contacts" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_Emp_Sal" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_Employee" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_Employee_Agreement" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_Employee_Attendance" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_LK_Cities" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_LK_States" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_Leave_Request" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_Roles" />
+	<table-filter match-catalog="PeopleManagement" match-schema="dbo"
+		match-name="PL_Users" />
+	<table catalog="PeopleManagement" schema="dbo" name="PL_Address">
+		<column name="AddressId"></column>
+		<column name="EmpId"></column>
+		<column name="AddressLineId"></column>
+		<column name="ZipCode"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo"
+		name="PL_AddressLine">
+		<column name="AddressLineId"></column>
+		<column name="AddressId"></column>
+		<column name="AddressLine"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo"
+		name="PL_Applicant">
+		<column name="ApplicantId"></column>
+		<column name="ApplicantName"></column>
+		<column name="Address1"></column>
+		<column name="Address2"></column>
+		<column name="Email"></column>
+		<column name="Phone"></column>
+		<column name="Mobile"></column>
+		<column name="Dob"></column>
+		<column name="Gender"></column>
+		<column name="Nationality"></column>
+		<column name="WorkExp"></column>
+		<column name="Skill"></column>
+		<column name="Industry"></column>
+		<column name="Category"></column>
+		<column name="Roles"></column>
+		<column name="CurrentEmployer"></column>
+		<column name="CurrentSalary"></column>
+		<column name="HighestDegree"></column>
+		<column name="Domain"></column>
+		<column name="CurrentLocation"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo"
+		name="PL_LK_Cities">
+		<column name="ZipCode"></column>
+		<column name="CityId"></column>
+		<column name="City"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo" name="PL_Emp_Sal">
+		<column name="Empid"></column>
+		<column name="Year"></column>
+		<column name="Month"></column>
+		<column name="AllowanceType"></column>
+		<column name="AllowanceName"></column>
+		<column name="Amt"></column>
+		<column name="Taxable"></column>
+		<column name="Percentage"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo" name="PL_Contacts">
+		<column name="ContactId"></column>
+		<column name="EmpId"></column>
+		<column name="Mobile"></column>
+		<column name="Email"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo" name="PL_Employee">
+		<column name="EmpId"></column>
+		<column name="EmpFirstname"></column>
+		<column name="EmpLastname"></column>
+		<column name="EmpMiddlename"></column>
+		<column name="UserId"></column>
+		<column name="OrgId"></column>
+		<column name="LevelId"></column>
+		<column name="DeptId"></column>
+		<column name="Dob"></column>
+		<column name="Doj"></column>
+		<column name="Nationality"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo"
+		name="PL_Employee_Agreement">
+		<column name="EmpId"></column>
+		<column name="EmpName"></column>
+		<column name="LevelId"></column>
+		<column name="AllowanceType"></column>
+		<column name="AllowanceName"></column>
+		<column name="Amt"></column>
+		<column name="Taxable"></column>
+		<column name="Percentage"></column>
+		<column name="AgreementDate"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo" name="PL_Users">
+		<column name="UserId"></column>
+		<column name="Username"></column>
+		<column name="Password"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo"
+		name="PL_LK_States">
+		<column name="City"></column>
+		<column name="StateId"></column>
+		<column name="State"></column>
+		<column name="Country"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo"
+		name="PL_Employee_Attendance">
+		<column name="EmpId"></column>
+		<column name="EmpName"></column>
+		<column name="TodayDate"></column>
+		<column name="Month"></column>
+		<column name="Day"></column>
+		<column name="Year"></column>
+		<column name="InTime"></column>
+		<column name="OutTime"></column>
+		<column name="Remark"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo"
+		name="PL_Leave_Request">
+		<column name="ReqId"></column>
+		<column name="EmpId"></column>
+		<column name="EmpName"></column>
+		<column name="TodayDate"></column>
+		<column name="LevelId"></column>
+		<column name="DeptId"></column>
+		<column name="FromDate"></column>
+		<column name="ToDate"></column>
+		<column name="Days"></column>
+		<column name="Reason"></column>
+		<column name="LeaveType"></column>
+		<column name="Activity1"></column>
+		<column name="Activity2"></column>
+		<column name="Activity3"></column>
+		<column name="Person1"></column>
+		<column name="Person2"></column>
+		<column name="Person3"></column>
+		<column name="Detail1"></column>
+		<column name="Detail2"></column>
+		<column name="Detail3"></column>
+		<column name="Address"></column>
+		<column name="Remark"></column>
+		<column name="LeaveStatus"></column>
+	</table>
+	<table catalog="PeopleManagement" schema="dbo" name="PL_Roles">
+		<column name="RoleId"></column>
+		<column name="RoleName"></column>
+		<column name="Username"></column>
+	</table>
+</hibernate-reverse-engineering>

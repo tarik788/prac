@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<div id="navigation-container">
+	<div id="navigation">
+		<ul>
+			<li><a href="Home.action">Home</a></li>
+			<li><a href="Employee.action"></a></li>
+			<li><a href="LeaveManagement.action"></a></li>
+			<li><a href="Password.action">Change Password</a></li>
+		</ul>
+	</div>
+	<div id="userinfo">
+		<ul>
+			<li><a href="#">Welcome: <%=request.getRemoteUser()%></a></li>
+			<li><a href="#">Logout</a>
+		</ul>
+	</div>
+</div>

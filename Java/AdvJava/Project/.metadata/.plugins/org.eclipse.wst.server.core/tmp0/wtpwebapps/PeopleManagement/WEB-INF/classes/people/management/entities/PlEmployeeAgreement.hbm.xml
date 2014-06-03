@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 Jun, 2014 4:48:02 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="people.management.entities.PlEmployeeAgreement" table="PL_Employee_Agreement" schema="dbo" catalog="PeopleManagement">
+        <id name="empId" type="int">
+            <column name="EmpId" />
+            <generator class="assigned" />
+        </id>
+        <property name="empName" type="string">
+            <column name="EmpName" length="20" not-null="true" />
+        </property>
+        <property name="levelId" type="string">
+            <column name="LevelId" length="20" />
+        </property>
+        <property name="allowanceType" type="string">
+            <column name="AllowanceType" length="50" not-null="true" />
+        </property>
+        <property name="allowanceName" type="string">
+            <column name="AllowanceName" length="20" not-null="true" />
+        </property>
+        <property name="amt" type="int">
+            <column name="Amt" not-null="true" />
+        </property>
+        <property name="taxable" type="string">
+            <column name="Taxable" length="5" />
+        </property>
+        <property name="percentage" type="java.lang.Integer">
+            <column name="Percentage" />
+        </property>
+        <property name="agreementDate" type="date">
+            <column name="AgreementDate" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

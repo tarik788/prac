@@ -1,0 +1,11 @@
+127.0.0.1 - - [04/Jun/2014:00:57:22 +0530] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [04/Jun/2014:00:57:22 +0530] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [04/Jun/2014:00:57:27 +0530] "GET /PeopleManagement/ HTTP/1.1" 302 -
+127.0.0.1 - - [04/Jun/2014:00:57:27 +0530] "GET /PeopleManagement/Manager/Home HTTP/1.1" 200 1223
+127.0.0.1 - - [04/Jun/2014:00:57:33 +0530] "POST /PeopleManagement/Manager/j_security_check HTTP/1.1" 302 -
+127.0.0.1 - admin [04/Jun/2014:00:57:34 +0530] "GET /PeopleManagement/Manager/Home HTTP/1.1" 200 1318
+127.0.0.1 - admin [04/Jun/2014:00:57:34 +0530] "GET /PeopleManagement/style/Layout.css HTTP/1.1" 304 -
+127.0.0.1 - admin [04/Jun/2014:00:57:35 +0530] "GET /PeopleManagement/Manager/Password.action HTTP/1.1" 200 2006
+127.0.0.1 - admin [04/Jun/2014:00:58:10 +0530] "POST /PeopleManagement/Manager/ChangePassword.action HTTP/1.1" 200 2035
+127.0.0.1 - admin [04/Jun/2014:00:58:12 +0530] "GET /PeopleManagement/Logout.jsp HTTP/1.1" 302 -
+127.0.0.1 - - [04/Jun/2014:00:58:12 +0530] "GET /PeopleManagement/Manager/Home HTTP/1.1" 200 1223

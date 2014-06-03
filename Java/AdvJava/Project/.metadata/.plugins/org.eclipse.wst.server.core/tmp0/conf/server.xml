@@ -125,7 +125,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="C:\Development\Tarik\prac\Java\AdvJava\Project\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context antiJARLocking="true" debug="5" docBase="C:\Development\Tarik\prac\Java\AdvJava\Project\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\PeopleManagement" path="/PeopleManagement" reloadable="true" source="org.eclipse.jst.jee.server:PeopleManagement">
+      <Context docBase="D:\Development\Tarik\prac\Java\AdvJava\Project\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context antiJARLocking="true" debug="5" docBase="D:\Development\Tarik\prac\Java\AdvJava\Project\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\PeopleManagement" path="/PeopleManagement" reloadable="true" source="org.eclipse.jst.jee.server:PeopleManagement">
   <!-- works! -->
   <Resource auth="Container" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" maxActive="8" maxIdle="4" maxWait="10000" name="jdbc/PeopleManagement" password="@ndheri788" type="javax.sql.DataSource" url="jdbc:sqlserver://lwn0o0exea.database.windows.net:1433;databaseName=PeopleManagement" username="axkhan2@lwn0o0exea"/>
   <!-- Does not seem to work?! -->

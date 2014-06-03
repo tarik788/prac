@@ -1,0 +1,43 @@
+package people.management.db;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javassist.bytecode.Descriptor.Iterator;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+public class PMDbTransactions<T> {
+
+	public Boolean Insert(T t) {
+		try {
+			Session session = PMHibernateSingleton.OpenSession();
+
+		} catch (Exception ex) {
+
+		}
+		return false;
+	}
+
+	public List<T> SelectAll(String pQuery) {
+	    List<T> retTable = new ArrayList<T>();
+		try {
+			
+			Session session = PMHibernateSingleton.OpenSession();
+			Transaction tran = session.beginTransaction();
+			Query query = session.createQuery(pQuery);
+			List querylist = query.list();
+			Iterator itr = querylist.iterator();
+			while(itr.hasNext()){
+				
+			}
+
+		} catch (Exception ee) {
+
+		}
+		return retTable;
+	}
+}

@@ -1,0 +1,23 @@
+package people.management.actions;
+
+import people.management.entities.PlUsers;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ChangePassword extends ActionSupport{
+
+	public PlUsers pluser;
+	
+	public String execute(){
+		
+	}
+
+	public PlUsers getPluser() {
+		return pluser;
+	}
+
+	public void setPluser(PlUsers pluser) {
+		this.pluser = pluser;
+	}
+	
+}

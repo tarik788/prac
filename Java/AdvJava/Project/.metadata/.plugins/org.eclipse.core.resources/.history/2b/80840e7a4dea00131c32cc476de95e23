@@ -1,0 +1,5 @@
+package people.management.db;
+
+public class PMHibernateSingleton {
+
+}

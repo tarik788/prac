@@ -1,0 +1,84 @@
+package people.management.actions;
+
+import javax.servlet.ServletContext;
+import org.apache.struts2.ServletActionContext;
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.interceptor.ServletRequestAware;
+import org.hibernate.Transaction;
+import org.hibernate.classic.Session;
+
+import people.management.db.PMDbTransactions;
+import people.management.db.PMHibernateSingleton;
+import people.management.entities.PlUsers;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ChangePassword extends ActionSupport {
+
+	public String oldPassword;
+	public String newPassword;
+	public String retypedPassword;
+	public String errorMessage;
+	
+	public String getOldPassword() {
+		return oldPassword;
+	}
+
+	public void setOldPassword(String oldPassword) {
+		this.oldPassword = oldPassword;
+	}
+
+	public String getErrorMessage() {
+		return errorMessage;
+	}
+
+	public void setErrorMessage(String errorMessage) {
+		this.errorMessage = errorMessage;
+	}
+
+	public String getNewPassword() {
+		return newPassword;
+	}
+
+	public void setNewPassword(String newPassword) {
+		this.newPassword = newPassword;
+	}
+
+	public String getRetypedPassword() {
+		return retypedPassword;
+	}
+
+	public void setRetypedPassword(String retypedPassword) {
+		this.retypedPassword = retypedPassword;
+	}
+
+	PMDbTransactions<PlUsers> dbTrans;
+
+	public String execute() {
+		errorMessage = "Change password failed";
+//        Session session = PMHibernateSingleton.getSessionFactory().openSession();
+//        Transaction trans = null;
+//        try{
+//        	trans = session.beginTransaction();
+//        }
+//        catch(Exception ee){
+//        	ee.printStackTrace();
+//        }
+//		HttpServletRequest request = ServletActionContext.getRequest();
+//		String username = request.getRemoteUser();
+//		PlUsers currentuser = dbTrans
+//				.SelectSingle("from PL_Users where Username = '"
+//						+ request.getRemoteUser() + "'");
+//		if(currentuser.getPassword().equals(oldPassword)){
+//			currentuser.setPassword(newPassword);
+//			dbTrans.Update(currentuser);
+//		}
+//		else{
+//		return "error";
+//		}
+//		
+		return "success";
+	}
+
+}
