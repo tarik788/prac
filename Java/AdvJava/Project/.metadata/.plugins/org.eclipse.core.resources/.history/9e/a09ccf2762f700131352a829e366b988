@@ -1,0 +1,83 @@
+package people.management.actions;
+
+import org.apache.struts2.ServletActionContext;
+import javax.servlet.http.HttpServletRequest;
+
+import people.management.db.PMDbTransactions;
+import people.management.entities.PlUsers;
+
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.validator.annotations.RequiredFieldValidator;
+import com.opensymphony.xwork2.validator.annotations.Validations;
+
+@Validations
+public class ChangePassword extends ActionSupport {
+
+	public String oldPassword;
+	public String newPassword;
+	public String retypedPassword;
+	public String message;
+
+	@RequiredFieldValidator(message = "Type your old password")
+	public String getOldPassword() {
+		return oldPassword;
+	}
+
+	public void setOldPassword(String oldPassword) {
+		this.oldPassword = oldPassword;
+	}
+
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	@RequiredFieldValidator(message = "Type your old password")
+	public String getNewPassword() {
+		return newPassword;
+	}
+
+	public void setNewPassword(String newPassword) {
+		this.newPassword = newPassword;
+	}
+	
+
+	public String getRetypedPassword() {
+		return retypedPassword;
+	}
+
+	@RequiredFieldValidator(message = "Type your old password")
+	public void setRetypedPassword(String retypedPassword) {
+		this.retypedPassword = retypedPassword;
+	}
+
+	PMDbTransactions<PlUsers> dbTrans;
+
+//	public String execute() {
+//		dbTrans = new PMDbTransactions<PlUsers>();
+//		HttpServletRequest request = ServletActionContext.getRequest();
+//		String username = request.getRemoteUser();
+//		PlUsers currentuser = dbTrans
+//				.SelectSingle("from PlUsers where Username = '"
+//						+ request.getRemoteUser() + "'");
+//		if (currentuser.getPassword().equals(oldPassword)) {
+//			currentuser.setPassword(newPassword);
+//			dbTrans.Update(currentuser);
+//			message = "Password updated successfully";
+//		} else {
+//			message = "Wrong old password";
+//			return "error";
+//		}
+//
+//		return "success";
+//	}
+
+	public String input(){
+	return "success";
+	}
+	
+}

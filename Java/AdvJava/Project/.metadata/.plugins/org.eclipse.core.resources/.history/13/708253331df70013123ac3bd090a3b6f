@@ -1,0 +1,41 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="Manager" namespace="/" extends="struts-default">
+		<result-types>
+			<result-type name="tiles"
+				class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		<action name="Home">
+			<result type="tiles">Home</result>
+		</action>
+		<action name="changePwd" class="people.management.actions.ChangePassword">
+			<result type="tiles" name="success">Home</result>
+			<result type="tiles" name="input">ChangePassword</result>
+			<result type="tiles" name="error">ChangePassword</result>
+		</action>
+		<action name="Employee">
+			<result type="tiles">
+				Employee
+			</result>
+		</action>
+		<action name="Payroll">
+			<result type="tiles">
+				Payroll
+			</result>
+		</action>
+		<action name="Leave">
+			<result type="tiles">
+				Leave
+			</result>
+		</action>
+		<action name="Password">
+			<result type="tiles">ChangePassword</result>
+		</action>
+		<action name="Welcome">
+			<result>Welcome.jsp</result>
+		</action>
+	</package>
+</struts>

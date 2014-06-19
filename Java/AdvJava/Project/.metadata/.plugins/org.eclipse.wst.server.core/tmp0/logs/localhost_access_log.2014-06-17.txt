@@ -1,0 +1,14 @@
+127.0.0.1 - - [17/Jun/2014:20:18:58 +0530] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [17/Jun/2014:20:19:00 +0530] "GET /PeopleManagement/ HTTP/1.1" 302 -
+127.0.0.1 - - [17/Jun/2014:20:19:00 +0530] "GET /PeopleManagement/Manager/Home HTTP/1.1" 200 1223
+127.0.0.1 - - [17/Jun/2014:20:19:05 +0530] "POST /PeopleManagement/Manager/j_security_check HTTP/1.1" 200 1223
+127.0.0.1 - - [17/Jun/2014:20:19:16 +0530] "GET /PeopleManagement/Manager/ HTTP/1.1" 200 1223
+127.0.0.1 - - [17/Jun/2014:20:19:30 +0530] "POST /PeopleManagement/Manager/j_security_check HTTP/1.1" 200 1223
+127.0.0.1 - - [17/Jun/2014:20:19:45 +0530] "GET /PeopleManagement/ HTTP/1.1" 302 -
+127.0.0.1 - - [17/Jun/2014:20:19:45 +0530] "GET /PeopleManagement/Manager/Home HTTP/1.1" 200 1223
+127.0.0.1 - - [17/Jun/2014:20:19:54 +0530] "POST /PeopleManagement/Manager/j_security_check HTTP/1.1" 200 1223
+127.0.0.1 - - [17/Jun/2014:20:20:01 +0530] "GET /PeopleManagement/Manager/ HTTP/1.1" 200 1223
+127.0.0.1 - - [17/Jun/2014:20:20:20 +0530] "POST /PeopleManagement/Manager/j_security_check HTTP/1.1" 200 1223
+127.0.0.1 - - [17/Jun/2014:20:21:40 +0530] "GET /PeopleManagement/Manager HTTP/1.1" 302 -
+127.0.0.1 - - [17/Jun/2014:20:21:40 +0530] "GET /PeopleManagement/Manager/ HTTP/1.1" 200 1223
+127.0.0.1 - - [17/Jun/2014:20:24:05 +0530] "POST /PeopleManagement/Manager/j_security_check HTTP/1.1" 200 1223

@@ -1,0 +1,17 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+    "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<field name="name">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>Name is Required</message>
+		</field-validator>
+	</field>
+	<field name="age">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>Please enter your age</message>
+		</field-validator>
+		
+	</field>
+</validators>

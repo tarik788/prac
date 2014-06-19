@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+<div id="content">
+
+	<s:form action="go" namespace="/Manager">
+		<table>
+			<tr>
+				<td><s:textfield name="oldPassword" label="OldPassword" /></td>
+			</tr>
+			<tr>
+
+				<td><s:textfield name="newPassword" label="NewPassword" /></td>
+			</tr>
+			<tr>
+
+				<td><s:textfield name="retypedPassword" label="RetypePassword" /></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="center"><s:submit value="save" />
+</td>
+			</tr>
+			<tr>
+				<td colspan="2"><label class="message center"><s:property
+							value="message" /></label></td>
+			</tr>
+		</table>
+	</s:form>
+</div>
