@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../style/Layout.css"></link>
+<link rel="stylesheet" type="text/css" href="../style/bootstrap.css"></link>
+<title><tiles:insertAttribute name="title" ignore="true" /></title>
+</head>
+<body>
+	<tiles:insertAttribute name="Header" />
+	<tiles:insertAttribute name="Navigation" />
+	<div id="content-container">
+		<div id="content-container2">
+			<div id="content-container3">
+				<tiles:insertAttribute name="Body" />
+			</div>
+		</div>
+	</div>
+	<tiles:insertAttribute name="Footer" />
+</body>
+</html>
